@@ -11,3 +11,4 @@ app.post('/register', (req,res)=>{
 });
 
 app.listen(4000);
+//mongodb+srv://tyronwei:Tyron2009@mern-blog.dbrumwd.mongodb.net/?retryWrites=true&w=majority
