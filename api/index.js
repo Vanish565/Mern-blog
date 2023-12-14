@@ -7,12 +7,17 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoosegoose.connect('mongodb+srv://tyronwei:Tyron2009@mern-blog.dbrumwd.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://tyronwei:Tyron2009@mern-blog.dbrumwd.mongodb.net/?retryWrites=true&w=majority');
 
 app.post('/register', async(req,res)=>{
     const {username, password} = req.body;
-    const userDoc = await User.create({username,password});
-    res.json(userDoc);
+    try{
+        const userDoc = await User.create({username,password});
+        res.json(userDoc);
+    }
+    catch(e){
+        res.status(400).json(e);
+    }
 });
 
 app.listen(4000);
