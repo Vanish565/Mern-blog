@@ -15,3 +15,9 @@ Blog posting site
   - install express, cors and mongoose package in that directory
 - Have a Client folder
   - install react-router-dom in this directory
+
+# Packages added
+- yarn add express
+- yarn add cors
+- yarn add mongoose
+- yarn add jsonwebtoken
