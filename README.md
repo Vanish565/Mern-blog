@@ -21,3 +21,4 @@ Blog posting site
 - yarn add cors
 - yarn add mongoose
 - yarn add jsonwebtoken
+- yarn add cookie-parser
