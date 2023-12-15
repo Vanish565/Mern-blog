@@ -52,7 +52,7 @@ app.post('/login', async(req,res)=>{
         res.status(400).json('wrong credentials');
     }
 });
-app.get('profile', (req,res) => {
+app.get('/profile', (req,res) => {
     const {token} = req.cookies;
     jwt.verify(token,secret, {}, (err,info)=>{
         if(err) throw err;
