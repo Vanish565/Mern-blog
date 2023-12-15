@@ -59,4 +59,10 @@ app.get('/profile', (req,res) => {
         res.json(info);
     });
 });
+
+app.post('/logout', (req,res)=>{
+    //sending token as an empty string
+    res.cookie('token', '').json('ok');
+});
+
 app.listen(4000);
