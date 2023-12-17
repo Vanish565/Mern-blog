@@ -17,8 +17,16 @@ Blog posting site
   - install react-router-dom in this directory
 
 # Packages added
+
+API
+
 - yarn add express
 - yarn add cors
 - yarn add mongoose
 - yarn add jsonwebtoken
 - yarn add cookie-parser
+
+CLIENT
+
+- yarn add react-quill
+- yarn add react-router-dom
