@@ -25,6 +25,7 @@ API
 - yarn add mongoose
 - yarn add jsonwebtoken
 - yarn add cookie-parser
+- yarn add multer
 
 CLIENT
 
