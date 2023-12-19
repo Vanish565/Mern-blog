@@ -19,6 +19,8 @@ const secret = 'goabsfljafjkbxsvbisboewbdo';
 app.use(cors({credentials:true,origin:'http://localhost:3000'}));
 app.use(express.json());
 app.use(cookieParser());
+//uploading all static uploads
+app.use('/uploads',express.static(__dirname + '/uploads'));
 
 //connecting to database
 mongoose.connect('mongodb+srv://tyronwei:Tyron2009@mern-blog.dbrumwd.mongodb.net/?retryWrites=true&w=majority');

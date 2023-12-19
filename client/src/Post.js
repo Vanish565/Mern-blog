@@ -5,7 +5,7 @@ export default function Post({title, summary, cover,content,createdAt,author})
     return (
       <div className='post'>
         <div className='image'>
-          <img src='https://www.technewsworld.com/wp-content/uploads/sites/3/2023/11/computer-chip.jpg' alt=''></img>
+          <img src={'http://localhost:4000/' + cover} alt=''></img>
         </div>
         <div className='texts'>
           <h2>{title}</h2>
