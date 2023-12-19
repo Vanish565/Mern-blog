@@ -31,3 +31,4 @@ CLIENT
 
 - yarn add react-quill
 - yarn add react-router-dom
+- yarn add date-fns

@@ -5,7 +5,8 @@ const {Schema, model} = mongoose;
     title:String,
     summary:String,
     content:String,
-    cover:String
+    cover:String,
+    author:{type:Schema.Types.ObjectId, ref:'User'},
  }, {
     timestamps: true,
  });
