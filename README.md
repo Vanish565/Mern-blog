@@ -32,3 +32,12 @@ CLIENT
 - yarn add react-quill
 - yarn add react-router-dom
 - yarn add date-fns
+
+#How to start the program
+1. Open terminal
+2. input command line "cd api"
+3. to start the server, input command line "nodemon index.js"
+4. open new terminal
+5. input command line "cd client"
+6. to start webpage, input command line "npm start"
+
