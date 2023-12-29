@@ -118,12 +118,13 @@ app.put('/post', uploadMiddleware.single('file'), async (req,res)=>{
         if(!isAuthor){
             return res.status(400).json('you are not the author');
         }
-        postDoc.update({title,
+        await postDoc.updateOne({title,
             summary,
             content,
-            cover:newPath ? newPath: postDoc.cover,});
-    });    
+            cover: newPath ? newPath : postDoc.cover,
+        });
         res.json(postDoc);   
+    });
 });
 
 app.get('/post', async (req,res)=>{
